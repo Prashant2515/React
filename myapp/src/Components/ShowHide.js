@@ -5,10 +5,14 @@ function Showhide()
     const [show,setShow] = useState(false);
     const handleShow=()=>
     {
-        
+            
         setShow(true);
        
     }
+    // function handleShow()
+    // {
+    //     setShow(true);
+    // }
     const handleHide=()=>
     {
         setShow(false);
