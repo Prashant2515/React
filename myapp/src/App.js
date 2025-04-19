@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import compo from './Components/Home';
-import {Home,About} from './Components/Home';
+// import Bulb from './Components/Bulb_on_off';
+import Count from './Components/Count_button';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Home/>
-      <About/>
+    
+     <Count/>
     </>
  
   );
