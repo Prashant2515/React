@@ -1,12 +1,13 @@
 // import Bulb from './Components/Bulb_on_off';
-import Count from './Components/Count_button';
+// import Count from './Components/Count_button';
 import './App.css';
+import  Showhide  from './Components/ShowHide';
 
 function App() {
   return (
     <>
     
-     <Count/>
+     <Showhide/>
     </>
  
   );
