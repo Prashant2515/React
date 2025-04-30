@@ -1,16 +1,14 @@
-// import Bulb from './Components/Bulb_on_off';
-// import Count from './Components/Count_button';
+import React from 'react'
 import './App.css';
-import  Showhide  from './Components/ShowHide';
+import Cal  from './Components/Cal';
+import Calculator from './Components/Calculator';
 
-function App() {
+export const App = () => {
   return (
     <>
-    
-     <Showhide/>
+    {/* <Cal/> */}
+    <Calculator/>
     </>
- 
-  );
+  )
 }
-
-export default App;
+export default App
