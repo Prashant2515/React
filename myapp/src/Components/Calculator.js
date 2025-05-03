@@ -9,7 +9,7 @@ const Calculator = () => {
     const num1 = parseFloat(firstValue)
     const num2 = parseFloat(secondValue)
     // console.log(num1,num2)
-    if(num1==0 || num2==0)
+    if(num1===0 || num2===0)
     {
       setResult("Enter valid Number")
     }
@@ -39,6 +39,7 @@ const Calculator = () => {
           setResult(num2/num1)
           break;
         }
+      default:
     }
 
   }

@@ -1,13 +1,15 @@
 import React from 'react'
-import './App.css';
-import Cal  from './Components/Cal';
-import Calculator from './Components/Calculator';
+import Navbar from './Components/Navbar'
+import Todolist from "./Components/Todolist";
+
 
 export const App = () => {
   return (
-    <>
-    {/* <Cal/> */}
-    <Calculator/>
+  <>
+      <Navbar/>
+      <div className='container my-5'>
+        <Todolist/>
+      </div>
     </>
   )
 }
