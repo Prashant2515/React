@@ -7,7 +7,7 @@ export const App = () => {
   return (
   <>
       <Navbar/>
-      <div className='container my-5'>
+      <div className='.container my-5 pt-5' >
         <Todolist/>
       </div>
     </>

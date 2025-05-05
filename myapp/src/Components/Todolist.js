@@ -38,16 +38,18 @@ const Todolist = () => {
           </textarea> */}
           <ul style={{ marginTop: "20px" }}>
             {tasks.map((t, index) => (
-              <li key={index} style={{ marginBottom: "10px" }}>
+              <li key={index} style={{ marginBottom: "10px" , listStyle:"none", color:"black",fontWeight:"600"}}>
                 {t}
                 <button
                   style={{
                     marginLeft: "10px",
                     color: "white",
                     backgroundColor: "red",
+                    borderRadius:"10px",
+                    border:"1px solid red"
                   }}
                 >
-                  Delete
+                  Delete Task
                 </button>
               </li>
             ))}
