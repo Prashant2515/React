@@ -4,13 +4,19 @@ const Todolist = () => {
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
   const handleAddClick = () => {
-    if (task != "") {
+    if (task !== "") {
       setTasks([...tasks, task]);
       setTask("");
+      // console.log(task)
     } else {
       setTask("Write Something to Add ");
     }
   };
+  const handleDeleteBtn=(index)=>
+  {
+    // setTasks(tasks.filter(task,index))
+    console.log("This is index hhhhh",index)
+  }
   return (
     <>
       <div className="container">
@@ -40,7 +46,8 @@ const Todolist = () => {
             {tasks.map((t, index) => (
               <li key={index} style={{ marginBottom: "10px" , listStyle:"none", color:"black",fontWeight:"600"}}>
                 {t}
-                <button
+                
+                <button onClick={handleDeleteBtn(index)}
                   style={{
                     marginLeft: "10px",
                     color: "white",
